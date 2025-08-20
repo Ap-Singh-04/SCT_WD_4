@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📝 My To-Do List (Aps)</title>
+<link rel="stylesheet" href="Aptodo.css">
+</head>
+<body>
+<video autoplay muted loop id="background-video">
+  <source src="imgvid//Sunset_Ocean_1280x720.mp4" type="video/mp4">
+</video>
+<div id="color-overlay"></div>
+
+<div class="todo-container">
+    <div class="task-stats">
+        <div class="stats-left">
+            <span class="stats-text">Going Great !</span>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        <div class="stats-hexagon">
+            <span id="completedCount">0</span>/<span id="totalCount">0</span>
+        </div>
+    </div>
+
+    <h1> 📝 My To-Do List</h1>
+
+    <div class="input-area">
+        <input type="text" id="taskInput" placeholder="Lets do something new...📒 " maxlength="100" title="Enter your task here">
+        <input type="datetime-local" id="dueDate" title="Select due date and time">
+        <button id="addBtn">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+</div>
+
+<script src="Aptodo.js"></script>
+</body>
+</html>
